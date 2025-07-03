@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velvet Room Italian Cuisine</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Palatino+Linotype&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="CSS/reservation-popup1.css">
+<link rel="stylesheet" href="CSS/reservation-popup2.css">
+</head>
+
+<body>
+  <!-- =======================
+       HEADER
+       ======================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo-3.png" alt="Velvet Room" />
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="cta-buttons">
+        <a href="#" class="btn-outline">Order Pickup</a>
+        <a href="#" class="btn-primary">Book a Table</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =======================
+       MENU
+       ======================= -->
+  <section class="menu-container">
+    <div class="menu-inner">
+      <h1>Our Menu</h1>
+
+      <!-- MAIN TABS -->
+      <ul class="nav nav-tabs justify-content-center main-tabs" id="mainTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#food" type="button">Food</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#drinks" type="button">Drinks</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#wine" type="button">Wine</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#happy" type="button">Happy Hour</button>
+        </li>
+      </ul>
+
+      <!-- MAIN TAB CONTENT -->
+      <div class="tab-content mt-4">
+        <!-- =======================
+             FOOD TAB
+             ======================= -->
+        <div class="tab-pane fade show active" id="food">
+
+          <!-- SUB-TABS -->
+          <ul class="nav nav-tabs justify-content-center sub-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#starter" type="button">Starter</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#salads" type="button">Salads</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#mains" type="button">Mains</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pastas" type="button">Pastas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pizzas" type="button">Pizzas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#handhelds" type="button">Handhelds</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#desserts" type="button">Desserts</button>
+            </li>
+          </ul>
+
+          <!-- SUB-TAB CONTENT -->
+          <div class="tab-content pt-4">
+            <div class="tab-pane fade show active" id="starter">
+              <!-- IMAGE -->
+              <div class="menu-image-wrapper">
+                <img src="assets/starter.jpeg" alt="Starter Image">
+              </div>
+
+              <h3 class="menu-section-title">Royal Starters</h3>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-info">
+                    <h4>Bruschetta Imperiale</h4>
+                    <p>Toasted artisan bread with heirloom tomatoes, aged balsamic, and basil pearls.</p>
+                  </div>
+                  <div class="price">$12</div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="item-info">
+                    <h4>Carpaccio di Re Umberto</h4>
+                    <p>Beef tenderloin, arugula, Parmigiano-Reggiano, and truffle oil drizzle.</p>
+                  </div>
+                  <div class="price">$22</div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="item-info">
+                    <h4>Melanzane alla Duchessa</h4>
+                    <p>Fried eggplant, smoked mozzarella, velvet marinara.</p>
+                  </div>
+                  <div class="price">$18</div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="item-info">
+                    <h4>Crostini della Regina</h4>
+                    <p>Wild mushroom pâté, whipped ricotta, olive tapenade trio.</p>
+                  </div>
+                  <div class="price">$16</div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="item-info">
+                    <h4>Arancini Reali</h4>
+                    <p>Saffron risotto balls stuffed with mozzarella, marinara sauce.</p>
+                  </div>
+                  <div class="price">$17</div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="item-info">
+                    <h4>Scampi al Lume</h4>
+                    <p>Garlic-butter prawns flamed in cognac, served with microgreens.</p>
+                  </div>
+                  <div class="price">$24</div>
+                </div>
+              </div>
+            </div>
+
+           <!-- SALADS -->
+            <div class="tab-pane fade" id="salads">
+                <div class="menu-image-wrapper">
+                  <img src="assets/salad.jpg" alt="Salads Banner">
+                </div>
+                <h3 class="menu-section-title"> Signature Salads </h3>
+                <div class="menu-grid">
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Insalata Verde</h4>
+                      <p>Mixed greens, cucumbers, cherry tomatoes, balsamic vinaigrette.</p>
+                    </div>
+                    <div class="price">$12</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Caprese di Bufala</h4>
+                      <p>Fresh buffalo mozzarella, heirloom tomatoes, basil, olive oil.</p>
+                    </div>
+                    <div class="price">$15</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Caesar alla Roma</h4>
+                      <p>Romaine hearts, crispy pancetta, shaved Parmigiano, anchovy dressing.</p>
+                    </div>
+                    <div class="price">$14</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Pear & Gorgonzola</h4>
+                      <p>Arugula, poached pear, walnuts, gorgonzola crumble, honey vinaigrette.</p>
+                    </div>
+                    <div class="price">$16</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Beetroot Mosaic</h4>
+                      <p>Roasted beets, whipped ricotta, pistachio dust, lemon zest.</p>
+                    </div>
+                    <div class="price">$15</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Tricolore</h4>
+                      <p>Radicchio, endive, arugula with aged balsamic & shaved pecorino.</p>
+                    </div>
+                    <div class="price">$13</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- MAINS -->
+
+              <div class="tab-pane fade" id="mains">
+                <div class="menu-image-wrapper">
+                  <img src="assets/main.jpg" alt="Mains Banner">
+                </div>
+                <h3 class="menu-section-title"> Grand Mains </h3>
+                <div class="menu-grid">
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Pollo alla Griglia</h4>
+                      <p>Grilled chicken breast with lemon herb butter and seasonal vegetables.</p>
+                    </div>
+                    <div class="price">$26</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Branzino al Forno</h4>
+                      <p>Oven-roasted Mediterranean sea bass with fennel and citrus.</p>
+                    </div>
+                    <div class="price">$32</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Osso Buco Milanese</h4>
+                      <p>Braised veal shank over saffron risotto with gremolata.</p>
+                    </div>
+                    <div class="price">$38</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Filetto al Barolo</h4>
+                      <p>Beef tenderloin with Barolo wine reduction and truffle mash.</p>
+                    </div>
+                    <div class="price">$42</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Vitello alla Parmigiana</h4>
+                      <p>Breaded veal cutlet with marinara and mozzarella, served with spaghetti.</p>
+                    </div>
+                    <div class="price">$28</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Salmone al Limone</h4>
+                      <p>Pan-seared salmon with lemon caper sauce and asparagus.</p>
+                    </div>
+                    <div class="price">$30</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pastas -->
+
+              <div class="tab-pane fade" id="pastas">
+                <div class="menu-image-wrapper">
+                  <img src="assets/pasta.jpg" alt="Pastas Banner">
+                </div>
+                <h3 class="menu-section-title"> Signature Pastas </h3>
+                <div class="menu-grid">
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Spaghetti Carbonara</h4>
+                      <p>Classic Roman pasta with pancetta, egg yolk, and Parmigiano-Reggiano.</p>
+                    </div>
+                    <div class="price">$22</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Pappardelle al Cinghiale</h4>
+                      <p>Fresh pappardelle with slow-cooked wild boar ragù.</p>
+                    </div>
+                    <div class="price">$27</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Ravioli Ricotta e Spinaci</h4>
+                      <p>Homemade ravioli stuffed with ricotta and spinach in butter-sage sauce.</p>
+                    </div>
+                    <div class="price">$24</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Tagliatelle al Tartufo</h4>
+                      <p>Fresh egg tagliatelle with black truffle cream sauce.</p>
+                    </div>
+                    <div class="price">$30</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Lasagna della Nonna</h4>
+                      <p>Traditional layered pasta with beef ragù, béchamel, and mozzarella.</p>
+                    </div>
+                    <div class="price">$25</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Penne all’Arrabbiata</h4>
+                      <p>Spicy tomato garlic sauce with chili flakes and fresh parsley.</p>
+                    </div>
+                    <div class="price">$19</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PIZZA -->
+
+              <div class="tab-pane fade" id="pizzas">
+                <div class="menu-image-wrapper">
+                  <img src="assets/pizza.jpg" alt="Pizzas Banner">
+                </div>
+                <h3 class="menu-section-title"> Artisan Pizzas </h3>
+                <div class="menu-grid">
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Margherita Classica</h4>
+                      <p>San Marzano tomatoes, fior di latte, fresh basil, extra virgin olive oil.</p>
+                    </div>
+                    <div class="price">$18</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Quattro Formaggi</h4>
+                      <p>Mozzarella, gorgonzola, fontina, and parmesan blend.</p>
+                    </div>
+                    <div class="price">$22</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Velvet Pepperoni</h4>
+                      <p>Spicy Calabrese pepperoni, chili honey, mozzarella, red sauce.</p>
+                    </div>
+                    <div class="price">$21</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Prosciutto e Rucola</h4>
+                      <p>Shaved prosciutto, arugula, parm flakes, balsamic glaze.</p>
+                    </div>
+                    <div class="price">$24</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Funghi Selvatici</h4>
+                      <p>Wild mushrooms, truffle oil, thyme, mozzarella, garlic cream base.</p>
+                    </div>
+                    <div class="price">$23</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Diavola</h4>
+                      <p>Spicy soppressata, red onions, chili oil, hot sauce drizzle.</p>
+                    </div>
+                    <div class="price">$22</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- HANDHELD -->
+
+              <div class="tab-pane fade" id="handhelds">
+                <div class="menu-image-wrapper">
+                  <img src="assets/handheld.jpg" alt="Handhelds Banner">
+                </div>
+                <h3 class="menu-section-title"> Gourmet Handhelds </h3>
+                <div class="menu-grid">
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Pollo Panino</h4>
+                      <p>Grilled chicken breast, pesto aioli, arugula, tomatoes, ciabatta.</p>
+                    </div>
+                    <div class="price">$18</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Meatball Sub Reale</h4>
+                      <p>House meatballs, provolone, basil, and velvet marinara on a hoagie roll.</p>
+                    </div>
+                    <div class="price">$19</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Porchetta Sandwich</h4>
+                      <p>Slow-roasted pork, fennel slaw, grainy mustard on a focaccia bun.</p>
+                    </div>
+                    <div class="price">$20</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Eggplant Parm Hero</h4>
+                      <p>Fried eggplant, melted mozzarella, basil, and zesty tomato sauce.</p>
+                    </div>
+                    <div class="price">$17</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Velvet Burger</h4>
+                      <p>Ground beef + Italian sausage blend, provolone, caramelized onions, aioli.</p>
+                    </div>
+                    <div class="price">$21</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Caprese Wrap</h4>
+                      <p>Fresh mozzarella, tomatoes, basil, greens, balsamic glaze in a spinach wrap.</p>
+                    </div>
+                    <div class="price">$16</div>
+                  </div>
+                </div>
+              </div>
+              <!-- DESSERTS -->
+
+              <div class="tab-pane fade" id="desserts">
+                <div class="menu-image-wrapper">
+                  <img src="assets/dessert.jpg" alt="Desserts Banner">
+                </div>
+                <h3 class="menu-section-title"> Her Majesty’s Desserts </h3>
+                <div class="menu-grid">
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Torta Velvet</h4>
+                      <p>Red velvet tiramisu with mascarpone cream and espresso drizzle.</p>
+                    </div>
+                    <div class="price">$13</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Cannoli della Regina</h4>
+                      <p>Ricotta-filled pastry with orange zest, chocolate chips, and pistachios.</p>
+                    </div>
+                    <div class="price">$12</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Affogato Reale</h4>
+                      <p>Vanilla bean gelato drowned in espresso and a touch of amaretto.</p>
+                    </div>
+                    <div class="price">$11</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Panna Cotta alla Rosa</h4>
+                      <p>Silky panna cotta infused with rosewater and topped with raspberry glaze.</p>
+                    </div>
+                    <div class="price">$12</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Gelato Royale</h4>
+                      <p>Selection of house-made gelatos: pistachio, hazelnut, dark chocolate.</p>
+                    </div>
+                    <div class="price">$10</div>
+                  </div>
+              
+                  <div class="menu-item">
+                    <div class="item-info">
+                      <h4>Limoncello Cheesecake</h4>
+                      <p>Creamy cheesecake with lemon zest and a biscotti crumble crust.</p>
+                    </div>
+                    <div class="price">$13</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="tab-pane fade" id="drinks">
+            <div class="menu-image-wrapper">
+              <img src="assets/drink.jpg" alt="Drinks Banner">
+            </div>
+            <h3 class="menu-section-title"> Signature Beverages </h3>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Velvet Negroni</h4>
+                  <p>Campari, gin, sweet vermouth with a blood orange twist.</p>
+                </div>
+                <div class="price">$16</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Amalfi Lemon Spritz</h4>
+                  <p>Limoncello, Prosecco, soda, fresh mint.</p>
+                </div>
+                <div class="price">$15</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Espresso Martini</h4>
+                  <p>Vodka, espresso, coffee liqueur, shaken over ice.</p>
+                </div>
+                <div class="price">$17</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Rosato Royale</h4>
+                  <p>Rosé, elderflower liqueur, club soda, lavender garnish.</p>
+                </div>
+                <div class="price">$15</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Lavender Lemonade (Non-Alcoholic)</h4>
+                  <p>Fresh lemon juice, lavender syrup, sparkling water.</p>
+                </div>
+                <div class="price">$8</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>San Pellegrino Sparkling</h4>
+                  <p>500ml glass bottle, chilled.</p>
+                </div>
+                <div class="price">$6</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- WINE -->
+
+          <div class="tab-pane fade" id="wine">
+            <div class="menu-image-wrapper">
+              <img src="assets/wine.jpeg" alt="Wine Banner">
+            </div>
+            <h3 class="menu-section-title"> Noble Wines </h3>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Barolo “Re di Velluto” DOCG – Piedmont</h4>
+                  <p>Bold and dry with dried cherry, leather, and violet notes.</p>
+                </div>
+                <div class="price">Glass: $22 | Bottle: $85</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Brunello di Montalcino “Vecchia Gloria” DOCG</h4>
+                  <p>Full-bodied with black plum, tobacco, and regal earthiness.</p>
+                </div>
+                <div class="price">Glass: $20 | Bottle: $78</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Chianti Classico Riserva “Duca Rosso” DOCG</h4>
+                  <p>Red fruit, spice, and a noble tannin structure.</p>
+                </div>
+                <div class="price">Glass: $14 | Bottle: $55</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Gavi di Gavi “Bianco di Corte” DOCG</h4>
+                  <p>Crisp, delicate with white peach and almond notes.</p>
+                </div>
+                <div class="price">Glass: $12 | Bottle: $46</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Prosecco Superiore “Velluto d’Oro” DOCG</h4>
+                  <p>Fine and festive, golden apple and almond notes.</p>
+                </div>
+                <div class="price">Glass: $11 | Bottle: $44</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Moscato d’Asti “Stella del Vespro”</h4>
+                  <p>Lightly sparkling, sweet and floral.</p>
+                </div>
+                <div class="price">Glass: $10 | Bottle: $38</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HAPPY HOUR -->
+
+          <div class="tab-pane fade" id="happy">
+            <div class="menu-image-wrapper">
+              <img src="assets/happy-hour.png" alt="Happy Hour Banner">
+            </div>
+            <h3 class="menu-section-title"> Royal Happy Hour </h3>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Mini Truffle Arancini</h4>
+                  <p>Saffron risotto bites with parmesan & black truffle aioli.</p>
+                </div>
+                <div class="price">$9</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Velvet Negroni</h4>
+                  <p>Gin, Campari, sweet vermouth, and orange peel.</p>
+                </div>
+                <div class="price">$10</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Prosecco Spritz</h4>
+                  <p>Classic Italian aperitivo with orange and herbs.</p>
+                </div>
+                <div class="price">$8</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Mini Margherita Pizzette</h4>
+                  <p>Fresh mozzarella, basil, and tomato on golden crusts.</p>
+                </div>
+                <div class="price">$11</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>House Red & White Wines</h4>
+                  <p>Velvet Room’s handpicked selections by the glass.</p>
+                </div>
+                <div class="price">$6</div>
+              </div>
+          
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Royal Olive & Bread Board</h4>
+                  <p>Warm bread, tapenade, whipped butter, olives.</p>
+                </div>
+                <div class="price">$10</div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================
+       FOOTER
+       ======================= -->
+  <footer>
+    <div class="footer-row1">
+      <a href="index.html"><img src="assets/logo-3.png" alt="Velvet Room" /></a>
+      <input type="text" name="SIGN UP" id="sign-up-form" size="35" />
+      <button type="button" class="subscribe-btn">SUBSCRIBE</button>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-row2">
+      <nav>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>          <li><a href="#">Careers</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-row3">
+      <p>&copy; 2025 BCIT. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Paste this inside your <body> before </body> -->
+<!-- Popup containers -->
+<div id="reservation-popup-container"></div>
+<div id="reservation-popups-placeholder"></div>
+
+<!-- Popup script loader -->
+<script>
+  fetch("reservation-popups.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("reservation-popups-placeholder").innerHTML = data;
+    });
+</script>
+
+<!-- JS Files -->
+<script src="JS/reservation-popup.js"></script>
+</body>
+</html>

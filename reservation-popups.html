@@ -1,0 +1,110 @@
+<!--  RESERVATION POP UP 1 -->
+
+<div id="reservation-popup-1" class="reservation-popup">
+    <div class="reservation-box">
+      <button class="close-btn" onclick="closeReservationPopup()">×</button>
+      <h1>Select Your Location</h1>
+  
+      <form>
+        <div class="form-group">
+          <label for="location-select">Choose a Location</label>
+          <select id="location-select">
+            <option value="">Select a Location</option>
+            <option value="location1">Downtown Vancouver</option>
+            <option value="location2">Burnaby Metrotown</option>
+            <option value="location3">North Vancouver</option>
+          </select>
+        </div>
+
+        <div class="location-checkbox">
+          <input type="checkbox" id="currentLocationCheckbox">
+          <label for="currentLocationCheckbox">Use my current location</label>
+        </div>
+  
+        <div class="reservation-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.292663663525!2d-123.12073732380741!3d49.28272907139364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867179cb10700d%3A0xb88b80efc172a83b!2sDowntown%2C%20Vancouver%2C%20BC!5e0!3m2!1sen!2sca!4v1719700000000!5m2!1sen!2sca"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+  
+        <button type="button" class="continue-btn" onclick="openReservationPopup2()">Continue</button>
+      </form>
+    </div>
+  </div>
+
+  <!--  RESERVATION POP UP 2 -->
+
+  <div id="reservation-popup-2" class="reservation-popup">
+    <div class="reservation-box">
+      <button class="close-btn" onclick="closeReservationPopup2()">×</button>
+      <h1>Make Reservation</h1>
+  
+      <form class="reservation-form">
+        <!-- Guests -->
+        <div class="form-group">
+          <label for="guests">Guests</label>
+          <select id="guests" name="guests" required>
+            <option value="">Select number of guests</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5 Guests</option>
+            <option>6 Guests</option>
+            <option>7 Guests</option>
+            <option>8 Guests</option>
+            <option>9 Guests</option>
+            <option>10 Guests</option>
+            <option>Over 10 Guests</option>
+          </select>
+        </div>
+  
+        <!-- Time -->
+        <div class="form-group">
+          <label for="time">Time</label>
+          <select id="time" name="time" required>
+            <option value="">Select a time</option>
+            <option>3:00 PM</option>
+            <option>4:00 PM</option>
+            <option>5:00 PM</option>
+            <option>6:00 PM</option>
+            <option>7:00 PM</option>
+            <option>8:00 PM</option>
+            <option>9:00 PM</option>
+            <option>10:00 PM</option>
+          </select>
+        </div>
+  
+        <!-- Date -->
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+  
+        <h2>Contact Info</h2>
+  
+        <!-- Name -->
+        <div class="form-group">
+          <input type="text" id="fullname" name="fullname" placeholder="* Name and Last Name" required />
+        </div>
+  
+        <!-- Phone -->
+        <div class="form-group">
+          <input type="tel" id="phone" name="phone" placeholder="* Phone Number" required />
+        </div>
+  
+        <!-- Email -->
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="* Email Address" required />
+        </div>
+  
+        <!-- Updates Checkbox -->
+        <div class="form-group checkbox-row">
+          <input type="checkbox" id="updates" name="updates" />
+          <label for="updates">Send me updates for my reservation</label>
+        </div>
+  
+        <button type="submit" class="confirm-btn">Confirm Reservation</button>
+      </form>
+    </div>
+  </div>

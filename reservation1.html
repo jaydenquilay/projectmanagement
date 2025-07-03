@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velvet Room Italian Cuisine</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Palatino+Linotype&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+  <!-- =======================
+       HEADER
+       ======================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo-3.png" alt="Velvet Room" />
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="cta-buttons">
+        <a href="#" class="btn-outline">Order Pickup</a>
+        <a href="#" class="btn-primary open-reservation">Book a Table</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =======================
+       RESERVATION MODAL
+       ======================= -->
+<!-- RESERVATION MODAL -->
+<div id="reservationModal" class="reservation-modal">
+    <div class="reservation-modal-content">
+      <span class="close-reservation">&times;</span>
+      <h2>Select Location</h2>
+      <form>
+        <div class="form-group">
+          <label for="locationSelect">Choose a Location</label>
+          <select id="locationSelect" name="location">
+            <option value="">Select...</option>
+            <option value="location1">Downtown Vancouver</option>
+            <option value="location2">Burnaby Heights</option>
+          </select>
+        </div>
+        <div class="location-checkbox">
+            <input type="checkbox" id="currentLocationCheckbox">
+            <label for="currentLocationCheckbox">Use my current location</label>
+          </div>
+  
+        <!-- Embedded Google Map -->
+        <div class="reservation-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.851498012962!2d-123.11622648437001!3d49.28272997933109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867179943db4c7%3A0x424a1663aa8bd2dd!2sDowntown%20Vancouver%2C%20Vancouver%2C%20BC!5e0!3m2!1sen!2sca!4v1719702350000!5m2!1sen!2sca"
+            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+  
+        <button type="submit" class="btn-primary">Continue</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =======================
+       FOOTER
+       ======================= -->
+  <footer>
+    <div class="footer-row1">
+      <a href="index.html"><img src="assets/logo-3.png" alt="Velvet Room" /></a>
+      <input type="text" name="SIGN UP" id="sign-up-form" size="35" />
+      <button type="button" class="subscribe-btn">SUBSCRIBE</button>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-row2">
+      <nav>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-row3">
+      <p>&copy; 2025 BCIT. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- =======================
+       JAVASCRIPT
+       ======================= -->
+  <script>
+    const modal = document.getElementById('reservationModal');
+    const openBtn = document.querySelector('.open-reservation');
+    const closeBtn = document.querySelector('.close-reservation');
+
+    openBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.style.display = 'block';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
