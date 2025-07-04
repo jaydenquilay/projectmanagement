@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Place Order - Velvet Room</title>
+
+  <link rel="stylesheet" href="CSS/order.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/reservation-popup1.css" />
+  <link rel="stylesheet" href="CSS/reservation-popup2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Palatino+Linotype&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">
+      <img src="assets/logo-3.png" alt="Velvet Room" />
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="cta-buttons">
+      <a href="order.html" class="btn-outline">Place Order</a>
+      <a href="#" class="btn-primary">Book a Table</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<div class="order-hero">
+  <img src="assets/place-order.jpg" alt="Food Delivery Hero" class="order-hero-img">
+</div>
+<div class="order-content container">
+  <h1>Place an Order at Velvet Room</h1>
+  <p class="address">555 Seymour St, Vancouver, BC V6B 3H6</p>
+  <p class="desc">Order from the comfort of your home and we’ll deliver it <br> right to your door or pick it up fresh from our restaurant.</p>
+</div>
+
+<!-- MENU SECTION -->
+<section class="menu-section">
+    <h2 class="menu-category-title">Royal Starters</h2>
+    <div class="menu-grid">
+      
+      <div class="menu-card">
+        <img src="assets/bruschetta.jpg" alt="Bruschetta Imperiale" />
+        <h3>Bruschetta Imperiale</h3>
+        <p>Toasted artisan bread with heirloom tomatoes, aged balsamic, and basil pearls.</p>
+        <span class="price">$12</span>
+        <button class="add-cart-btn" title="Add to Cart">+</button>
+      </div>
+  
+      <div class="menu-card">
+        <img src="assets/carpaccio.jpg" alt="Carpaccio di Re Umberto" />
+        <h3>Carpaccio di Re Umberto</h3>
+        <p>Beef tenderloin, arugula, Parmigiano-Reggiano, and truffle oil drizzle.</p>
+        <span class="price">$22</span>
+        <button class="add-cart-btn" title="Add to Cart">+</button>
+      </div>
+  
+      <div class="menu-card">
+        <img src="assets/melanzane4.jpg" alt="Melanzane alla Duchessa" />
+        <h3>Melanzane alla Duchessa</h3>
+        <p>Fried eggplant, smoked mozzarella, velvet marinara.</p>
+        <span class="price">$18</span>
+        <button class="add-cart-btn" title="Add to cart">+</button>
+      </div>
+  
+      <div class="menu-card">
+        <img src="assets/crostini.jpg" alt="Crostini della Regina" />
+        <h3>Crostini della Regina</h3>
+        <p>Wild mushroom pâté, whipped ricotta, olive tapenade trio.</p>
+        <span class="price">$16</span>
+        <button class="add-cart-btn" title="Add to cart">+</button>
+      </div>
+  
+      <div class="menu-card">
+        <img src="assets/arancini.jpg" alt="Arancini Reali" />
+        <h3>Arancini Reali</h3>
+        <p>Saffron risotto balls stuffed with mozzarella, marinara sauce.</p>
+        <span class="price">$17</span>
+        <button class="add-cart-btn" title="Add to cart">+</button>
+      </div>
+  
+      <div class="menu-card">
+        <img src="assets/scampi.jpg" alt="Scampi al Lume" />
+        <h3>Scampi al Lume</h3>
+        <p>Garlic-butter prawns flamed in cognac, served with microgreens.</p>
+        <span class="price">$24</span>
+        <button class="add-cart-btn" title="Add to cart">+</button>
+      </div>
+  
+    </div>
+  </section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-row1">
+    <a href="index.html"><img src="assets/logo-3.png" alt="Velvet Room" /></a>
+    <input type="text" name="SIGN UP" id="sign-up-form" size="35" />
+    <button type="button" class="subscribe-btn">SUBSCRIBE</button>
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-row2">
+    <nav>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer-row3">
+    <p>&copy; 2025 BCIT. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- RESERVATION POPUPS -->
+<div id="reservation-popups-placeholder"></div>
+<script>
+  fetch("reservation-popups.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("reservation-popups-placeholder").innerHTML = html;
+
+      // Now hook up the button
+      document.querySelectorAll(".btn-primary").forEach(btn => {
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          const popup = document.getElementById("reservation-popup-1");
+          if (popup) {
+            popup.style.display = "flex";
+          }
+        });
+      });
+
+      // Close functionality
+      window.closeReservationPopup = function () {
+        document.getElementById("reservation-popup-1").style.display = "none";
+      };
+
+      // Optional: go to step 2 popup
+      window.openReservationPopup2 = function () {
+        document.getElementById("reservation-popup-1").style.display = "none";
+        document.getElementById("reservation-popup-2").style.display = "flex";
+      };
+    });
+</script>
+<script src="JS/reservation-popup.js"></script>
+
+</body>
+</html>
